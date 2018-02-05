@@ -1,6 +1,5 @@
-angular.module('app.core')
+angular.module('ngPlaceholder', [])
     .directive('ngPlaceholder', function () {
-
         function link(scope, element, attrs) {
             var ph = attrs.ngPlaceholder;
             element.attr('placeholder', ph);
@@ -11,5 +10,3 @@ angular.module('app.core')
             link: link,
         }
     });
-
-
